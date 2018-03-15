@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://hdqwalls.com/wallpapers/train-rail-5k-gv.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <a href="/">Home Page</a>
+  </div>
+  <div class="w3-display-middle">
+        <p class="w3-large w3-center">Enter the correct Username/Password.</p>
+            <form method="POST">
+                {% csrf_token %}
+                <p>
+                    <h2 class="w3-jumbo w3-animate-top">Username</h2>
+                    <input type="text" name="username">
+                </p>
+                <p>
+                    <h2 class="w3-jumbo w3-animate-top">Password</h2>
+                    <input type="password" name="password">
+                </p>
+                <button type="submit">Login</button>
+            </form>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  </div>
+</div>
+
+</body>
+</html>
+
