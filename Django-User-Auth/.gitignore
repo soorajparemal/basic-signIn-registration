@@ -1,5 +1,7 @@
 *.pyc
-*.pye
+*~
+__pycache__
+env
 db.sqlite3
-settings.py
-*.sublime-*
+/static
+.DS_Store
